@@ -1,0 +1,146 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem;
+    flex-direction: column;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+span, p {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+
+hr {
+    opacity: 0.3;
+}
+
+p { 
+    font-size: 0.938rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+h1, ul {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+ul {
+    list-style: none;
+}
+
+ul span {
+    display: block;
+    font-size: 0.75rem;
+    margin-top: 0.313rem;
+    letter-spacing: 0.2rem;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+    max-width: 25rem;
+    border-radius: 0.938rem;
+    overflow: hidden;
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pictures {
+    position: relative;
+}
+
+.user {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 7rem;
+    position: absolute;
+    bottom: -25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    text-align: center;
+    padding-bottom: 1.25rem;
+    padding-left: 2.813rem;
+    padding-right: 2.813rem;
+    
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+}
+
+.profile {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.bg-top {
+    position: absolute;
+    top: -90%;
+    left: -50%;
+    z-index: -1;
+    object-fit: contain;
+}
+
+.bg-bottom {
+    position: absolute;
+    bottom: -90%;
+    right: -50%;
+    z-index: -1;
+    object-fit: contain;
+}
+
+.attribution {
+    margin-top: 1rem;
+    font-size: 0.688rem;
+    text-align: center;
+    color: white
+}
+.attribution a {
+    text-decoration: none;
+    color: white;
+}
+
+.attribution a:hover {
+    color:black;
+}
+
+@media (max-width: 440px) {
+    .user {
+        position: absolute;
+        bottom: -35%;
+    }
+
+    .bg-top {
+        top: 10%;
+    }
+    
+    .bg-bottom {
+        bottom: 10%;
+    }
+
+}
